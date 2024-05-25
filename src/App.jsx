@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import headerImage from './assets/header.png'
 import './App.css'
 
 function App() {
@@ -8,9 +7,7 @@ function App() {
 
   return (
     <>
-    <header className='header'>
-      <img src={headerImage} className='header__image' alt="Header background image" />
-    </header>
+    
       <div>
         <a href="https://vitejs.dev" target="_blank">
         </a>
