@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Header from './components/header/Header.jsx'
-import './App.css'
+import { useState } from 'react';
+import Header from './components/header/Header.jsx';
+import Form from './components/form/Form.jsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
-      
+      <Form />
     </>
-  )
-}
+  );
+};
 
 export default App
