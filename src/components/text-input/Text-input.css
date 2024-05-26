@@ -5,8 +5,8 @@
     margin-bottom: 24px;
 }
 
-.input-container:last-child {
-    margin-bottom: 0;
+.input-container:last-of-type {
+    margin-bottom: 40px;
 }
 
 .input-container__label {
