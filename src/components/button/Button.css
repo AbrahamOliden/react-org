@@ -1,0 +1,12 @@
+.create-button {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 20px 35px;
+    max-width: fit-content;
+}
+
+.create-button:hover {
+    color: #95FFD4;
+}
