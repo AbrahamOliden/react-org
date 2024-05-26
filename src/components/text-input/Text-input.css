@@ -1,13 +1,13 @@
 .input-container {
     display: flex;
     flex-flow: column nowrap;
+    gap: 8px;
     margin-bottom: 24px;
 }
 
 .input-container__label {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 8px;
 }
 
 .input-container__input {
