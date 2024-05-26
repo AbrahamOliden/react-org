@@ -13,7 +13,7 @@ function Form() {
                     <TextInput title='Position' placeholder='Introduce position'/>
                     <TextInput title='Photo' placeholder='Introduce photo link' />
                     <DropDownMenu title='Team' />
-                    <Button />
+                    <Button text='Create' />
                 </form>
             </section>
         </>
