@@ -16,11 +16,9 @@ function DropDownMenu(props) {
         <div className="input-container" role="none">
             <label htmlFor="team" className="input-container__label">{props.title}</label>
             <select name="team" id="team" className="dropdown">
-                { teams.map( (team) => {
-                    return (
-                        <option value={team}>{team}</option>
-                    );
-                } ) }
+                { teams.map((team, index) => 
+                    <option value={team} key={index}> {team} </option>
+                )};
             </select>
         </div>
     )
