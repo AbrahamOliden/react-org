@@ -42,6 +42,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  transition: color 0.5s;
 }
 button:hover {
   border-color: #646cff;
