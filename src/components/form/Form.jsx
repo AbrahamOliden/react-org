@@ -1,6 +1,7 @@
-import './Form.css'
+import './Form.css';
 import TextInput from '../text-input/Text-input.jsx';
 import DropDownMenu from '../dropdown/Dropdown.jsx';
+import Button from '../button/Button.jsx';
 
 function Form() {
     return (
@@ -12,6 +13,7 @@ function Form() {
                     <TextInput title='Position' placeholder='Introduce position'/>
                     <TextInput title='Photo' placeholder='Introduce photo link' />
                     <DropDownMenu title='Team' />
+                    <Button />
                 </form>
             </section>
         </>
