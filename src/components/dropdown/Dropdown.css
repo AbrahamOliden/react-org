@@ -1,0 +1,9 @@
+.dropdown {
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: rgba(24, 24, 24, 0.6);
+    padding: 30px 20px;
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+    outline-color: var(--main-color);
+}
