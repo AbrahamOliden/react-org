@@ -7,9 +7,9 @@ function Form() {
             <section className='form-container'>
                 <form className='form' action="">
                     <h2 className='form__header title'>Fill the form to create a new collaborator card.</h2>
-                    <TextInput />
-                    <TextInput />
-                    <TextInput />
+                    <TextInput title='Name' placeholder='Introduce name' />
+                    <TextInput title='Position' placeholder='Introduce position'/>
+                    <TextInput title='Photo' placeholder='Introduce photo link' />
                 </form>
             </section>
         </>
