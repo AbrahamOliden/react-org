@@ -11,7 +11,7 @@ function Form() {
                     <TextInput title='Name' placeholder='Introduce name' />
                     <TextInput title='Position' placeholder='Introduce position'/>
                     <TextInput title='Photo' placeholder='Introduce photo link' />
-                    <DropDownMenu />
+                    <DropDownMenu title='Team' />
                 </form>
             </section>
         </>
