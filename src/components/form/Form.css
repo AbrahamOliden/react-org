@@ -5,7 +5,10 @@
 }
 
 .form {
+    display: flex;
+    flex-flow: column nowrap;
     max-width: 80%;
+    text-align: left;
     background-color: #f7f7f7;
     border-radius: 20px;
     padding: 35px 95px;
