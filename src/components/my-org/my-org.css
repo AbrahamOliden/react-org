@@ -1,0 +1,13 @@
+.org__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.org__header__title {
+    align-self: center;
+}
+
+.org__header__button {
+    align-self: flex-end;
+}
