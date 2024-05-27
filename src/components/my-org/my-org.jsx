@@ -7,7 +7,7 @@ function MyOrg() {
             <div role='none' className='org__header' >
                 <h2 className='org__header__title title'>My Organization</h2>
                 <button className='org__header__button'>
-                    <img src={Collapse} ></img>
+                    <img src={Collapse} alt='Collapse/Expand icon' ></img>
                 </button>
             </div>
             
