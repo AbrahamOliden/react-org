@@ -6,15 +6,15 @@ function DropDownMenu(props) {
         props.setValue(e.target.value);
     };
 
-    const teams = [
-        "Programming",
-        "Front End",
-        "Data Science",
-        "Devops",
-        "UX/UI",
-        "Mobile",
-        "Innovation Management"
-    ];
+    // const teams = [
+    //     "Programming",
+    //     "Front End",
+    //     "Data Science",
+    //     "Devops",
+    //     "UX/UI",
+    //     "Mobile",
+    //     "Innovation Management"
+    // ];
 
     return (
         <div className="input-container" role="none">
@@ -29,7 +29,7 @@ function DropDownMenu(props) {
                 className="dropdown"
             >
                 <option value='' defaultValue='' hidden disabled >Select team</option>
-                { teams.map((team, index) => 
+                { props.teams.map((team, index) => 
                     <option value={team} key={index}> {team} </option>
                 )};
             </select>
