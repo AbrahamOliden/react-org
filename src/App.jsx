@@ -55,7 +55,11 @@ function App() {
       <Header />
       { display && <Form />}
       <MyOrg changeDisplay={changeDisplay} />
-      <Team team={'Programming'} />
+      {
+        teams.map( (team) => {
+          return <Team data={team} key={team.team} />
+        })
+      }
     </>
   );
 };
