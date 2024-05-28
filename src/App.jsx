@@ -6,10 +6,13 @@ import './App.css';
 
 function App() {
 
+  const [display, setDisplay] = useState(true);
+
   return (
     <>
       <Header />
-      <Form />
+      { display && <Form />}
+      {/* <Form /> */}
       <MyOrg />
     </>
   );
