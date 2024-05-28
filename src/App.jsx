@@ -17,7 +17,7 @@ function App() {
       <Header />
       { display && <Form />}
       <MyOrg changeDisplay={changeDisplay} />
-      <Team />
+      <Team team={'Programming'} />
     </>
   );
 };

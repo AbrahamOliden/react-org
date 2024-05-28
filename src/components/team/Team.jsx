@@ -1,9 +1,9 @@
 import './Team.css'
 
-function Team() {
+function Team(props) {
     return (
         <section className='team' >
-            <h3 className='team__header title' >Programming</h3>
+            <h3 className='team__header title' >{props.team}</h3>
             <div className="collaborators"></div>
         </section>
     );
