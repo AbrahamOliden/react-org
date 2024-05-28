@@ -9,6 +9,7 @@ function Form() {
     const [name, setName] = useState('');
     const [position, setPosition] = useState('');
     const [photo, setPhoto] = useState('');
+    const [team, setTeam] = useState('');
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -39,7 +40,11 @@ function Form() {
                     setValue={setPhoto}
                     required 
                 />
-                <DropDownMenu title='Team' />
+                <DropDownMenu 
+                    title='Team' 
+                    value={team}
+                    setValue={setTeam}
+                />
                 <Button text='Create' />
             </form>
         </section>
