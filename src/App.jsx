@@ -7,13 +7,15 @@ import './App.css';
 function App() {
 
   const [display, setDisplay] = useState(true);
+  const changeDisplay = () => {
+    setDisplay( !display );
+  };
 
   return (
     <>
       <Header />
       { display && <Form />}
-      {/* <Form /> */}
-      <MyOrg />
+      <MyOrg changeDisplay={changeDisplay} />
     </>
   );
 };
