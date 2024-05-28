@@ -2,6 +2,10 @@ import './Dropdown.css'
 
 function DropDownMenu(props) {
 
+    const handleChange = (e) => {
+        props.setValue(e.target.value);
+    };
+
     const teams = [
         "Programming",
         "Front End",
@@ -14,8 +18,16 @@ function DropDownMenu(props) {
 
     return (
         <div className="input-container" role="none">
-            <label htmlFor="team" className="input-container__label">{props.title}</label>
-            <select value={props.value} name="team" id="team" className="dropdown">
+            <label htmlFor="team" className="input-container__label">
+                {props.title}
+            </label>
+            <select 
+                value={props.value} 
+                onChange={handleChange}
+                name="team" 
+                id="team" 
+                className="dropdown"
+            >
                 <option value='' defaultValue='' hidden disabled >Select team</option>
                 { teams.map((team, index) => 
                     <option value={team} key={index}> {team} </option>
