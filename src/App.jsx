@@ -12,6 +12,44 @@ function App() {
     setDisplay( !display );
   };
 
+  const teams = [
+    {
+      team: "Programming",
+      mainColor: '#D9F7E9',
+      accentColor: '#57C278'
+    },
+    {
+      team: 'Front End',
+      mainColor: '#E8F8FF',
+      accentColor: '#82CFFA'
+    },
+    {
+      team: 'Data Science',
+      mainColor: '#F0F8E2',
+      accentColor: '#A6D157'
+    },
+    {
+      team: 'Devops',
+      mainColor: '#FDE7E8',
+      accentColor: '#E06B69'
+    },
+    {
+      team: 'UX/UI',
+      mainColor: '#FAE9F5',
+      accentColor: '#DB6EBF'
+    },
+    {
+      team: 'Mobile',
+      mainColor: '#FFF5D9',
+      accentColor: '#FFBA05'
+    },
+    {
+      team: 'Innovation Management',
+      mainColor: '#FFEEDF',
+      accentColor: '#FF8A29'
+    }
+];
+
   return (
     <>
       <Header />
