@@ -13,6 +13,13 @@ function Form() {
 
     const handleClick = (e) => {
         e.preventDefault();
+        
+        const data = {
+            name: name,
+            position: position,
+            photo: photo, 
+            team: team
+        };
     };
 
     return (
