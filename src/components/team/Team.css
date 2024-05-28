@@ -1,6 +1,5 @@
 .team {
     box-sizing: border-box;
-    background-color: #D9F7E9;
     padding: 32px;
 }
 
@@ -11,5 +10,5 @@
     font-weight: 400;
     line-height: 43px;
     padding-bottom: 10px;
-    border-bottom: 4px solid #57C278;
+    border-bottom: 4px solid;
 }
