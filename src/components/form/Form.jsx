@@ -7,7 +7,6 @@ function Form() {
 
     const handleClick = (e) => {
         e.preventDefault();
-        console.log(e);
     };
 
     return (
