@@ -4,7 +4,7 @@ import TextInput from '../text-input/Text-input.jsx';
 import DropDownMenu from '../dropdown/Dropdown.jsx';
 import Button from '../button/Button.jsx';
 
-function Form() {
+function Form(props) {
 
     const [name, setName] = useState('');
     const [position, setPosition] = useState('');
@@ -49,6 +49,7 @@ function Form() {
                 />
                 <DropDownMenu 
                     title='Team' 
+                    teams={props.teams}
                     value={team}
                     setValue={setTeam}
                 />
