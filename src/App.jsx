@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <Header />
-      { display && <Form />}
+      { display && <Form teams={teams.map( (team) => team.team )} />}
       <MyOrg changeDisplay={changeDisplay} />
       {
         teams.map( (team) => {
