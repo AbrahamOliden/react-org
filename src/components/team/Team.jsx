@@ -7,7 +7,7 @@ function Team(props) {
     return (
         <section className='team' style={{backgroundColor: mainColor}} >
             <h3 className='team__header title' style={{borderColor: accentColor}} >{team}</h3>
-            <div className="collaborators"></div>
+            <ul className="collaborators"></ul>
         </section>
     );
 };
