@@ -1,0 +1,33 @@
+.member-card {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 270px;
+    width: 260px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.background-accent {
+    height: 33%;
+    background-color: #57C278;
+}
+
+.background-cream {
+    height: 67%;
+    background-color: #F2F2F2;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 32px;
+}
+
+.info__photo {
+    height: 120px;
+    width: 120px;
+}
