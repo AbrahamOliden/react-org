@@ -11,6 +11,8 @@ function Form(props) {
     const [photo, setPhoto] = useState('');
     const [team, setTeam] = useState('');
 
+    const {registerMember} = props;
+
     const handleClick = (e) => {
         e.preventDefault();
         
@@ -20,6 +22,8 @@ function Form(props) {
             photo: photo, 
             team: team
         };
+
+        registerMember(data);
     };
 
     return (
