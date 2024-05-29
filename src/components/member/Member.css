@@ -7,14 +7,12 @@
     position: relative;
 }
 
-.background-accent {
+.team-background {
     height: 33%;
-    background-color: #57C278;
 }
 
-.background-cream {
+.general-background {
     height: 67%;
-    background-color: #F2F2F2;
 }
 
 .info {

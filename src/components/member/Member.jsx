@@ -1,14 +1,17 @@
 import './Member.css'
 
 function Member(props) {
+
+    const {name, position, photo, team} = props.data
+
     return (
         <li className='member-card' >
-            <div className='background-accent' role='none'></div>
-            <div className='background-cream' role='none'></div>
+            <div className='team-background' role='none'></div>
+            <div className='general-background' role='none'></div>
             <div className='info' >
-                <img src='' className='info__photo' alt='fotito' ></img>
-                <h4>Member</h4>
-                <p>Position</p>
+                <img src={photo} className='info__photo' alt={name} ></img>
+                <h4>{name}</h4>
+                <p>{position}</p>
             </div>
         </li>
     )
