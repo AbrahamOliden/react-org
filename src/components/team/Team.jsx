@@ -1,4 +1,5 @@
-import './Team.css'
+import Member  from '../member/Member.jsx';
+import './Team.css';
 
 function Team(props) {
 
@@ -7,7 +8,9 @@ function Team(props) {
     return (
         <section className='team' style={{backgroundColor: mainColor}} >
             <h3 className='team__header title' style={{borderColor: accentColor}} >{team}</h3>
-            <ul className="collaborators"></ul>
+            <ul className="collaborators">
+                <Member />
+            </ul>
         </section>
     );
 };
