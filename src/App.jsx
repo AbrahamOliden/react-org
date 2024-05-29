@@ -73,10 +73,10 @@ function App() {
       <MyOrg changeDisplay={changeDisplay} />
 
       { // Mapping Team components to teams' content
-        teams.map( (teamInfo) => <Team 
-          data={teamInfo} 
-          key={teamInfo.team} 
-          members={members.filter( (member) => member.teamInfo === member.team )} />
+        teams.map( (team) => <Team 
+          data={team} 
+          key={team.team} 
+          members={members.filter( (member) => team.team === member.team )} /> //Each component renders only the members from its team
         )
       };
 
