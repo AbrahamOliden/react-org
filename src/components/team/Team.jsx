@@ -14,7 +14,11 @@ function Team(props) {
                     <h3 className='team__header title' style={{borderColor: accentColor}} >{team}</h3>
                     <ul className="collaborators">
                         {
-                            members.map( (member, index) => <Member data={member} key={index} /> )
+                            members.map( (member, index) => <Member 
+                                data={member} 
+                                key={index} 
+                                theme={accentColor}
+                                /> )
                         }
                     </ul>
                 </section>
