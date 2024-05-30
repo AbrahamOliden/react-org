@@ -3,10 +3,13 @@ import './Member.css'
 function Member(props) {
 
     const {name, position, photo, team} = props.data
+    const theme = {
+        backgroundColor: props.theme
+    };
 
     return (
         <li className='member-card' >
-            <div className='team-background' role='none'></div>
+            <div className='team-background' style={theme} role='none'></div>
             <div className='general-background' role='none'></div>
             <div className='info' >
                 <img src={photo} className='info__photo' alt={name} ></img>
