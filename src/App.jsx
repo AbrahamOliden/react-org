@@ -68,7 +68,7 @@ function App() {
             teams={teams.map( (team) => team.team )}
             registerMember={registerMember}
           />
-      };
+      }
 
       <MyOrg changeDisplay={changeDisplay} />
 
@@ -76,9 +76,9 @@ function App() {
         teams.map( (team) => <Team 
           data={team} 
           key={team.team} 
-          members={members} />
+          members={members.filter( (member) => team.team === member.team )} /> //Each component renders only the members from its team
         )
-      };
+      }
 
     </>
   );

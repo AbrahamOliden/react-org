@@ -12,3 +12,11 @@
     padding-bottom: 10px;
     border-bottom: 4px solid;
 }
+
+.collaborators {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
