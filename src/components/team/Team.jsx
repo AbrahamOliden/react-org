@@ -4,7 +4,7 @@ import './Team.css';
 function Team(props) {
 
     const {team, mainColor, accentColor} = props.data;
-    const {members} = props;
+    const {members, deleteMember} = props;
 
     return (
         <>
@@ -18,6 +18,7 @@ function Team(props) {
                                 data={member} 
                                 key={index} 
                                 theme={accentColor}
+                                deleteMember={deleteMember}
                                 /> )
                         }
                     </ul>
