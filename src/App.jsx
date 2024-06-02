@@ -53,12 +53,15 @@ function App() {
   };
 
   const registerMember = (member) => {
-    console.log(members);
     setMembers([...members, member]); // Copy array with spread operator and add new member
   };
 
   const deleteMember = () => {
     console.log('adios popo');
+  };
+
+  const updateColor = (team, color) => {
+    console.log(team, color);
   };
 
   return (
@@ -81,6 +84,7 @@ function App() {
           key={team.team} 
           members={members.filter( (member) => team.team === member.team )}  //Each component renders only the members from its team
           deleteMember={deleteMember}
+          updateColor={updateColor}
           />
         )
       }
