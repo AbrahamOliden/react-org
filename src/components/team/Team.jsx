@@ -11,7 +11,15 @@ function Team(props) {
         {
             members.length > 0 &&
                 <section className='team' style={{backgroundColor: mainColor}} >
-                    <h3 className='team__header title' style={{borderColor: accentColor}} >{team}</h3>
+                    <div className='team__header' role='none' >
+                        <h3 className='header__title title' style={{borderColor: accentColor}} >{team}</h3>
+                        <input 
+                            type='color'
+                            value={accentColor}
+                            className='header__color'
+                        />
+                    </div>
+                    
                     <ul className="collaborators">
                         {
                             members.map( (member, index) => <Member 
