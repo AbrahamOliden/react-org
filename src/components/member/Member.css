@@ -9,9 +9,16 @@
     position: relative;
 }
 
+.member-card__delete {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 32px;
+}
+
 .team-background {
     height: 33%;
-    border-radius: 10px 10px 0 0;
+    border-top-left-radius: 10px;
 }
 
 .general-background {

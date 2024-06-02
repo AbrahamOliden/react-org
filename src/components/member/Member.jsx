@@ -1,4 +1,5 @@
 import './Member.css'
+import { IoIosCloseCircle } from 'react-icons/io';
 
 function Member(props) {
 
@@ -9,8 +10,8 @@ function Member(props) {
 
     return (
         <>
-        <span onClick={deleteMember} >D</span>
         <li className='member-card' >
+            <IoIosCloseCircle className='member-card__delete' onClick={deleteMember} />
             <div className='team-background' style={{ backgroundColor: theme}} role='none'></div>
             <div className='general-background' role='none'></div>
             <div className='member-info' >
