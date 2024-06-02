@@ -57,7 +57,9 @@ function App() {
     setMembers([...members, member]); // Copy array with spread operator and add new member
   };
 
-  
+  const deleteMember = () => {
+    console.log('adios popo');
+  };
 
   return (
     <>
@@ -77,7 +79,9 @@ function App() {
         teams.map( (team) => <Team 
           data={team} 
           key={team.team} 
-          members={members.filter( (member) => team.team === member.team )} /> //Each component renders only the members from its team
+          members={members.filter( (member) => team.team === member.team )}  //Each component renders only the members from its team
+          deleteMember={deleteMember}
+          />
         )
       }
 
