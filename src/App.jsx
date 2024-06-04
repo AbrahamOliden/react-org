@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 import Header from './components/header/Header.jsx';
 import Form from './components/form/Form.jsx';
 import MyOrg from './components/my-org/my-org.jsx';
@@ -9,7 +10,44 @@ import './App.css';
 function App() {
 
   const [display, setDisplay] = useState(true);
-  const [members, setMembers] = useState([]);
+  const [members, setMembers] = useState([
+    {
+      name: 'Pepito Oliden',
+      position: 'Coquero',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Mobile'
+    },
+    {
+      name: 'Mose Otilion',
+      position: 'Chisme',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Mobile'
+    },
+    {
+      name: 'Pollito Oliden',
+      position: 'Jueguitos',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Programming'
+    },
+    {
+      name: 'Yeyito Records',
+      position: 'Sonidero',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Innovation Management'
+    },
+    {
+      name: 'Sonora Chanclilla',
+      position: 'Dra. en rayos X',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Programming'
+    },
+    {
+      name: 'Chimio Caquitas',
+      position: 'Dra. en rayos X',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'UX/UI'
+    }
+  ]);
   const [teams, setTeams] = useState([
     {
       team: "Programming",
@@ -48,43 +86,7 @@ function App() {
     }
   ]);
 
-  // const teams = [
-  //     {
-  //       team: "Programming",
-  //       mainColor: '#D9F7E9',
-  //       accentColor: '#57C278'
-  //     },
-  //     {
-  //       team: 'Front End',
-  //       mainColor: '#E8F8FF',
-  //       accentColor: '#82CFFA'
-  //     },
-  //     {
-  //       team: 'Data Science',
-  //       mainColor: '#F0F8E2',
-  //       accentColor: '#A6D157'
-  //     },
-  //     {
-  //       team: 'Devops',
-  //       mainColor: '#FDE7E8',
-  //       accentColor: '#E06B69'
-  //     },
-  //     {
-  //       team: 'UX/UI',
-  //       mainColor: '#FAE9F5',
-  //       accentColor: '#DB6EBF'
-  //     },
-  //     {
-  //       team: 'Mobile',
-  //       mainColor: '#FFF5D9',
-  //       accentColor: '#FFBA05'
-  //     },
-  //     {
-  //       team: 'Innovation Management',
-  //       mainColor: '#FFEEDF',
-  //       accentColor: '#FF8A29'
-  //     }
-  // ];
+  console.log(uuid());
 
   const changeDisplay = () => {
     setDisplay( !display );
