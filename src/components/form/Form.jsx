@@ -59,6 +59,24 @@ function Form(props) {
                 />
                 <Button text='Create' />
             </form>
+
+            <form className='form' onSubmit={handleClick}>
+                <h2 className='form__header title'>Fill the form to create a new team.</h2>
+                <TextInput 
+                    title='Team' 
+                    placeholder='Introduce team name' 
+                    value={name}
+                    setValue={setName}
+                    required 
+                />
+                <TextInput 
+                    title='Color' 
+                    placeholder='Introduce team color in Hex value' 
+                    value={position}
+                    setValue={setPosition}
+                    required 
+                />
+            </form>
         </section>
     );
 };
