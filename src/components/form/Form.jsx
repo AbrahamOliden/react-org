@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Form.css';
-import TextInput from '../text-input/Text-input.jsx';
+import Input from '../input/Input.jsx';
 import DropDownMenu from '../dropdown/Dropdown.jsx';
 import Button from '../button/Button.jsx';
 
@@ -40,21 +40,21 @@ function Form(props) {
         <section className='form-container'>
             <form className='form' id='member-form' onSubmit={handleClick}>
                 <h2 className='form__header title'>Fill the form to create a new collaborator card.</h2>
-                <TextInput 
+                <Input 
                     title='Name' 
                     placeholder='Introduce name' 
                     value={name}
                     setValue={setName}
                     required 
                 />
-                <TextInput 
+                <Input 
                     title='Position' 
                     placeholder='Introduce position' 
                     value={position}
                     setValue={setPosition}
                     required 
                 />
-                <TextInput 
+                <Input 
                     title='Photo' 
                     placeholder='Introduce photo link' 
                     value={photo}
@@ -72,14 +72,14 @@ function Form(props) {
 
             <form className='form' id='team-form' onSubmit={handleNewTeam}>
                 <h2 className='form__header title'>Fill the form to create a new team.</h2>
-                <TextInput 
+                <Input 
                     title='Team' 
                     placeholder='Introduce team name' 
                     value={newTeam}
                     setValue={setNewTeam}
                     required 
                 />
-                <TextInput 
+                <Input 
                     title='Color' 
                     placeholder='Introduce team color in Hex value' 
                     value={color}
