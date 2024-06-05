@@ -14,8 +14,9 @@ function Form(props) {
     const [newTeam, setNewTeam] = useState('');
     const [color, setColor] = useState('')
 
-    const {registerMember} = props;
+    const {registerMember, createTeam} = props;
 
+    // Event handler for new member 
     const handleClick = (e) => {
         e.preventDefault();
         
@@ -28,6 +29,12 @@ function Form(props) {
 
         registerMember(data);
     };
+
+    // Event handler for new team
+    const handleNewTeam = (e) => {
+        e.preventDefault();
+        createTeam({team: newTeam, accentColor: color});
+    }
 
     return (
         <section className='form-container'>
@@ -63,7 +70,7 @@ function Form(props) {
                 <Button text='Create' />
             </form>
 
-            <form className='form' id='team-form' onSubmit={handleClick}>
+            <form className='form' id='team-form' onSubmit={handleNewTeam}>
                 <h2 className='form__header title'>Fill the form to create a new team.</h2>
                 <TextInput 
                     title='Team' 
@@ -79,6 +86,8 @@ function Form(props) {
                     setValue={setColor}
                     required 
                 />
+
+                <Button text='New Team' />
             </form>
         </section>
     );
