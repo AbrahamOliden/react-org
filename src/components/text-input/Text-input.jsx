@@ -2,6 +2,8 @@ import './Text-input.css';
 
 function TextInput(props) {
 
+    const {type = 'text'} = props;
+
     const handleChange = (e) => {
         props.setValue(e.target.value);
     };
@@ -13,7 +15,7 @@ function TextInput(props) {
             </label>
             <input 
                 className='input-container__input' 
-                type="text" 
+                type={type} 
                 value={props.value}
                 onChange={handleChange}
                 placeholder={props.placeholder} 
