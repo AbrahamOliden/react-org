@@ -12,36 +12,42 @@ function App() {
   const [display, setDisplay] = useState(true);
   const [members, setMembers] = useState([
     {
+      id: uuid(),
       name: 'Pepito Oliden',
       position: 'Coquero',
       photo: 'https://github.com/harlandlohora.png',
       team: 'Mobile'
     },
     {
+      id: uuid(),
       name: 'Mose Otilion',
       position: 'Chisme',
       photo: 'https://github.com/harlandlohora.png',
       team: 'Mobile'
     },
     {
+      id: uuid(),
       name: 'Pollito Oliden',
       position: 'Jueguitos',
       photo: 'https://github.com/harlandlohora.png',
       team: 'Programming'
     },
     {
+      id: uuid(),
       name: 'Yeyito Records',
       position: 'Sonidero',
       photo: 'https://github.com/harlandlohora.png',
       team: 'Innovation Management'
     },
     {
+      id: uuid(),
       name: 'Sonora Chanclilla',
       position: 'Dra. en rayos X',
       photo: 'https://github.com/harlandlohora.png',
       team: 'Programming'
     },
     {
+      id: uuid(),
       name: 'Chimio Caquitas',
       position: 'Dra. en rayos X',
       photo: 'https://github.com/harlandlohora.png',
@@ -103,8 +109,9 @@ function App() {
     setMembers([...members, member]); // Copy array with spread operator and add new member
   };
 
-  const deleteMember = () => {
-    console.log('adios popo');
+  const deleteMember = (id) => {
+    const updatedMembers = members.filter((member) => member.id !== id);
+    setMembers(updatedMembers);
   };
 
   const updateColor = (id, color) => {
