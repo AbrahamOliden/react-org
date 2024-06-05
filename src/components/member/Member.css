@@ -60,9 +60,10 @@
     line-height: 20px;
 }
 
-.fav-member {
-    color: purple;
-    font-size: 2rem;
-    width: 200px;
-    height: 200px;
+.like {
+    font-size: 1.5rem;
+}
+
+.like-true {
+    color: red;
 }

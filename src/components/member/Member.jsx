@@ -5,7 +5,7 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 function Member(props) {
 
     const {name, position, photo, team, id, favorite } = props.data
-    const {theme, deleteMember} = props
+    const {theme, like, deleteMember} = props
     
     const altText = `Photo of ${name}`;
 
@@ -21,8 +21,8 @@ function Member(props) {
                 <p className='member-info__position' >{position}</p>
                 {
                     favorite
-                        ? <AiFillHeart style={{'color': 'red', 'font-size': '1.5rem'}}/>
-                        : <AiOutlineHeart style={{'font-size': '1.5rem'}} />
+                        ? <AiFillHeart className='like like-true' onClick={() => like(id)} />
+                        : <AiOutlineHeart className='like like-false' onClick={() => like(id)} />
                 }
                 
             </div>
