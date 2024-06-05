@@ -99,8 +99,6 @@ function App() {
     }
   ]);
 
-  console.log(uuid());
-
   //Show or hide Form component
   const changeDisplay = () => {
     setDisplay( !display );
@@ -130,8 +128,8 @@ function App() {
   };
 
   const createTeam = (newTeam) => {
-    console.log(newTeam);
-  }
+    setTeams([...teams, {...newTeam, id: uuid()} ]);
+  };
 
   return (
     <>
