@@ -1,6 +1,6 @@
-import './Text-input.css';
+import './Input.css';
 
-function TextInput(props) {
+function Input(props) {
 
     const {type = 'text'} = props;
 
@@ -27,4 +27,4 @@ function TextInput(props) {
     );
 };
 
-export default TextInput;
+export default Input;
