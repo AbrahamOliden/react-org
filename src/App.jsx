@@ -16,42 +16,56 @@ function App() {
       name: 'Pepito Oliden',
       position: 'Coquero',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'Mobile'
+      team: 'Mobile',
+      favorite: true
     },
     {
       id: uuid(),
       name: 'Mose Otilion',
       position: 'Chisme',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'Mobile'
+      team: 'Mobile',
+      favorite: true
     },
     {
       id: uuid(),
       name: 'Pollito Oliden',
       position: 'Jueguitos',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'Programming'
+      team: 'Programming',
+      favorite: true
     },
     {
       id: uuid(),
       name: 'Yeyito Records',
       position: 'Sonidero',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'Innovation Management'
+      team: 'Innovation Management',
+      favorite: true
     },
     {
       id: uuid(),
       name: 'Sonora Chanclilla',
       position: 'Dra. en rayos X',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'Programming'
+      team: 'Programming',
+      favorite: true
     },
     {
       id: uuid(),
       name: 'Chimio Caquitas',
       position: 'Dra. en rayos X',
       photo: 'https://github.com/harlandlohora.png',
-      team: 'UX/UI'
+      team: 'UX/UI',
+      favorite: true
+    },
+    {
+      id: uuid(),
+      name: 'Yom ero',
+      position: 'Peneco',
+      photo: 'https://github.com/harlandlohora.png',
+      team: 'Front End',
+      favorite: false
     }
   ]);
   const [teams, setTeams] = useState([
