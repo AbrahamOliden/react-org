@@ -4,7 +4,7 @@ import './Team.css';
 
 function Team(props) {
 
-    const {team, mainColor, accentColor} = props.data;
+    const {team, mainColor, accentColor, id} = props.data;
     const {members, deleteMember, updateColor} = props;
     const newMainColor = {
         backgroundColor: hexToRgba(accentColor, 0.3)
@@ -21,7 +21,7 @@ function Team(props) {
                             type='color'
                             value={accentColor}
                             onChange={
-                                (e) => updateColor(team, e.target.value)
+                                (e) => updateColor(id, e.target.value)
                             }
                             className='header__color'
                         />
