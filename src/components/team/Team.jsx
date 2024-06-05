@@ -5,7 +5,7 @@ import './Team.css';
 function Team(props) {
 
     const {team, mainColor, accentColor, id} = props.data;
-    const {members, deleteMember, updateColor} = props;
+    const {members, like, deleteMember, updateColor} = props;
     const newMainColor = {
         backgroundColor: hexToRgba(accentColor, 0.3)
     }
@@ -33,6 +33,7 @@ function Team(props) {
                                 data={member} 
                                 key={index} 
                                 theme={accentColor}
+                                like={like}
                                 deleteMember={deleteMember}
                                 /> )
                         }
