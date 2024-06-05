@@ -11,6 +11,9 @@ function Form(props) {
     const [photo, setPhoto] = useState('');
     const [team, setTeam] = useState('');
 
+    const [newTeam, setNewTeam] = useState('');
+    const [color, setColor] = useState('')
+
     const {registerMember} = props;
 
     const handleClick = (e) => {
@@ -28,7 +31,7 @@ function Form(props) {
 
     return (
         <section className='form-container'>
-            <form className='form' onSubmit={handleClick}>
+            <form className='form' id='member-form' onSubmit={handleClick}>
                 <h2 className='form__header title'>Fill the form to create a new collaborator card.</h2>
                 <TextInput 
                     title='Name' 
@@ -60,20 +63,20 @@ function Form(props) {
                 <Button text='Create' />
             </form>
 
-            <form className='form' onSubmit={handleClick}>
+            <form className='form' id='team-form' onSubmit={handleClick}>
                 <h2 className='form__header title'>Fill the form to create a new team.</h2>
                 <TextInput 
                     title='Team' 
                     placeholder='Introduce team name' 
-                    value={name}
-                    setValue={setName}
+                    value={newTeam}
+                    setValue={setNewTeam}
                     required 
                 />
                 <TextInput 
                     title='Color' 
                     placeholder='Introduce team color in Hex value' 
-                    value={position}
-                    setValue={setPosition}
+                    value={color}
+                    setValue={setColor}
                     required 
                 />
             </form>
