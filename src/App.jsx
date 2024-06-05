@@ -50,36 +50,43 @@ function App() {
   ]);
   const [teams, setTeams] = useState([
     {
+      id: uuid(),
       team: "Programming",
       mainColor: '#D9F7E9',
       accentColor: '#57C278'
     },
     {
+      id: uuid(),
       team: 'Front End',
       mainColor: '#E8F8FF',
       accentColor: '#82CFFA'
     },
     {
+      id: uuid(),
       team: 'Data Science',
       mainColor: '#F0F8E2',
       accentColor: '#A6D157'
     },
     {
+      id: uuid(),
       team: 'Devops',
       mainColor: '#FDE7E8',
       accentColor: '#E06B69'
     },
     {
+      id: uuid(),
       team: 'UX/UI',
       mainColor: '#FAE9F5',
       accentColor: '#DB6EBF'
     },
     {
+      id: uuid(),
       team: 'Mobile',
       mainColor: '#FFF5D9',
       accentColor: '#FFBA05'
     },
     {
+      id: uuid(),
       team: 'Innovation Management',
       mainColor: '#FFEEDF',
       accentColor: '#FF8A29'
@@ -100,11 +107,10 @@ function App() {
     console.log('adios popo');
   };
 
-  const updateColor = (team, color) => {
-    console.log(team, color);
+  const updateColor = (id, color) => {
 
     const updatedTeams = teams.map((element) => {
-      if (element.team === team) {
+      if (element.id === id) {
         element.accentColor = color
       };
 
