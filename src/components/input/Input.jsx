@@ -6,6 +6,7 @@ function Input(props) {
 
     const handleChange = (e) => {
         props.setValue(e.target.value);
+
     };
 
     return (
@@ -14,7 +15,7 @@ function Input(props) {
                 {props.title}
             </label>
             <input 
-                className='input-container__input' 
+                className={`input-container__input input-${type}`} 
                 type={type} 
                 value={props.value}
                 onChange={handleChange}

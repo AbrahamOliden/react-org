@@ -21,3 +21,10 @@
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
     outline-color: var(--main-color);
 }
+
+.input-color {
+    height: 40px;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #FFF;
+}
