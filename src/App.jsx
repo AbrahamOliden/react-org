@@ -141,8 +141,21 @@ function App() {
     setTeams(updatedTeams);
   };
 
+  // Create new custom team
   const createTeam = (newTeam) => {
     setTeams([...teams, {...newTeam, id: uuid()} ]);
+  };
+
+  const like = (id) => {
+    const updatedFavorites = members.map((member) => {
+      if (member.id === id) {
+        member.favorite = !member.favorite;
+      };
+
+      return member;
+    });
+
+    setMembers(updatedFavorites);
   };
 
   return (
@@ -165,6 +178,7 @@ function App() {
           data={team} 
           key={team.team} 
           members={members.filter( (member) => team.team === member.team )}  //Each component renders only the members from its team
+          like={like}
           deleteMember={deleteMember}
           updateColor={updateColor}
           />
