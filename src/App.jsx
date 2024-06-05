@@ -101,6 +101,7 @@ function App() {
 
   console.log(uuid());
 
+  //Show or hide Form component
   const changeDisplay = () => {
     setDisplay( !display );
   };
@@ -114,6 +115,7 @@ function App() {
     setMembers(updatedMembers);
   };
 
+  // Change team color
   const updateColor = (id, color) => {
 
     const updatedTeams = teams.map((element) => {
@@ -127,6 +129,10 @@ function App() {
     setTeams(updatedTeams);
   };
 
+  const createTeam = (newTeam) => {
+    console.log(newTeam);
+  }
+
   return (
     <>
       <Header />
@@ -136,6 +142,7 @@ function App() {
           <Form 
             teams={teams.map( (team) => team.team )}
             registerMember={registerMember}
+            createTeam={createTeam}
           />
       }
 
