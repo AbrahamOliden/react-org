@@ -84,6 +84,7 @@ function Form(props) {
                     placeholder='Introduce team color in Hex value' 
                     value={color}
                     setValue={setColor}
+                    type='color'
                     required 
                 />
 
